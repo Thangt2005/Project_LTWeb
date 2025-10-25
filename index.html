@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Đăng nhập</h2>
+
+    <div class="social-login">
+      <button class="facebook">
+        <i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook
+      </button>
+      <button class="twitter">
+        <i class="fab fa-twitter"></i> Đăng nhập bằng Twitter
+      </button>
+    </div>
+
+    <h3>Đăng nhập bằng email</h3>
+    <div class="email-login">
+      <input type="email" id="email" placeholder="E-mail">
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <button class="login-btn">ĐĂNG NHẬP</button>
+    </div>
+
+     <div class="links">
+      <a href="#">Quên mật khẩu?</a> | <a href="#">Đăng ký tài khoản</a>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
