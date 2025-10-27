@@ -1,7 +1,5 @@
--- =========================================
 -- SQL SCRIPT: Đăng nhập người dùng
 -- Database: QLDangNhap
--- =========================================
 
 -- 1️ Tạo cơ sở dữ liệu
 CREATE DATABASE QLDangNhap;
