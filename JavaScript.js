@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Đăng nhập thành công!");
             window.location.href = "home.html"; // Chuyển trang sau khi login 
             alert("Sai Email hoặc Mật khẩu!");
+            
         }
     });
 });
