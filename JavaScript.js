@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Nếu hợp lệ → xử lý đăng nhập (giả lập)
         if (email === "admin@gmail.com" && password === "123456") {
             alert("Đăng nhập thành công!");
-            window.location.href = "home.html"; // Chuyển trang sau khi login (tùy bạn)
-        } else {
+            window.location.href = "home.html"; // Chuyển trang sau khi login 
             alert("Sai Email hoặc Mật khẩu!");
         }
     });
