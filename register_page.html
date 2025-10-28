@@ -1,47 +1,52 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <title>Đăng kí</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Khung chứa toàn bộ nội dung đăng kí -->
 <div class="register-container">
     <h2>Đăng Kí</h2>
+
     <!-- Các nút đăng kí tài khoản bằng mạng xã hội -->
-    <div class="social-login">
-        <button class="facebook">
-            <!-- Icon Facebook (có thể thêm font-awesome nếu cần) -->
+    <div class="social-register">
+        <button class="facebook1">
             <span>Đăng kí bằng Facebook</span>
         </button>
 
-        <button class="twitter">
+        <button class="twitter1">
             <span>Đăng kí bằng Twitter</span>
         </button>
 
-        <button class="google">
+        <button class="google1">
             <span>Đăng kí bằng Google</span>
         </button>
-        <!-- Tiêu đề phụ -->
-        <h3>Tạo tài khoản tại đây</h3>
-
-        <!-- Form đăng kí -->
-        <form class="email-register" id="register-form">
-
-            <!-- Trường nhập email -->
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-            <!-- Trường nhập tên đăng nhập -->
-            <input type="username-register" id="username-register" name="username-register" placeholder="Username" required >
-            <!--trường nhập mật khẩu-->
-            <input type="password-register" id="password-register"name="password-register" placeholder="Password" required >
-            <!--trường nhập lại mật khẩu-->
-            <input type="password-register" id="password-register1"name="password-register" placeholder="Password repeat " required >
-            <!-- Nút đăng kí -->
-            <button type="submit" class="login-btn">ĐĂNG KÍ</button>
-        </form>
-
     </div>
+
+    <!-- Tiêu đề phụ -->
+    <h3>Tạo tài khoản tại đây</h3>
+
+    <!-- Form đăng kí -->
+    <form class="email-register" id="register-form">
+        <!-- Trường nhập email -->
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+        <!-- Trường nhập tên đăng nhập -->
+        <input type="text" id="username-register" name="username-register" placeholder="Username" required>
+
+        <!-- Trường nhập mật khẩu -->
+        <div class="password-wrapper">
+            <input type="password" id="password-register" name="password-register" placeholder="Password" required>
+            <span class="toggle-password">👁️</span>
+        </div>
+
+        <!-- Trường nhập lại mật khẩu -->
+        <input type="password" id="password-register1" name="password-repeat" placeholder="Password repeat" required>
+
+        <!-- Nút đăng kí -->
+        <button type="submit" class="register-btn">ĐĂNG KÍ</button>
+    </form>
 </div>
 </body>
 </html>

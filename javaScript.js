@@ -6,16 +6,13 @@ function togglePassword() {
 }
 
 // Xử lý khi nhấn nút đăng nhập (demo)
-document.getElementById('login-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Ngăn trang reload
+document.getElementById("login-btn").addEventListener("click",function (){
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    if (email && password) {
+        alert("Đăng nhập thành công!");
+    } else {
+        alert("Vui lòng nhập đầy đủ email và mật khẩu.");
+    }
 
-  const email = document.getElementById('email').value.trim();
-  const username = document.getElementById('username').value.trim();
-  const password = document.getElementById('password').value.trim();
-
-  if (!email || !username || !password) {
-    alert('Vui lòng điền đầy đủ thông tin.');
-  } else {
-    alert(`Chào mừng ${username}!`);
-  }
 });
