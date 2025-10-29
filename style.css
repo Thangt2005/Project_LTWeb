@@ -1,4 +1,3 @@
-/* Tổng thể trang */
 body {
   background-color: #e6e6e6;
   font-family: 'Arial', sans-serif;
@@ -9,26 +8,19 @@ body {
   margin: 0;
 }
 
-/* Khung đăng nhập chính */
 .login-container {
-  background-color: #fff;
-  padding: 40px 30px;
-  border-radius: 20px;
+  background-color: #e6e6e6;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 360px;
 }
 
-/* Tiêu đề */
 h2 {
   color: #222;
   font-size: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* Nút đăng nhập mạng xã hội */
 .social-login button {
-  width: 100%;
+  width: 300px;
   padding: 12px;
   border: none;
   border-radius: 25px;
@@ -51,25 +43,25 @@ h2 {
   background-color: #1da1f2;
 }
 
-/* Phần đăng nhập bằng email */
+.google {
+  background-color: #db4437;
+}
+
 h3 {
   color: #333;
-  margin: 25px 0 15px;
-  font-size: 18px;
+  margin: 25px 0 10px;
 }
 
 .email-login input {
-  width: 100%;
+  width: 280px;
   padding: 12px 15px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 25px;
   font-size: 15px;
   outline: none;
-  box-sizing: border-box;
 }
 
-/* Ô nhập mật khẩu có biểu tượng 👁️ */
 .password-wrapper {
   position: relative;
 }
@@ -77,15 +69,12 @@ h3 {
 .toggle-password {
   position: absolute;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 12px;
   cursor: pointer;
-  font-size: 18px;
 }
 
-/* Nút đăng nhập */
 .login-btn {
-  width: 100%;
+  width: 300px;
   padding: 12px;
   background-color: #222;
   color: white;
@@ -95,24 +84,13 @@ h3 {
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
   background-color: #444;
 }
 
-/* Liên kết dưới cùng */
-.links {
-  margin-top: 20px;
-  font-size: 14px;
+.social-login button i {
+  font-size: 18px;
 }
 
-.links a {
-  color: #222;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
