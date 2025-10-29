@@ -1,0 +1,68 @@
+/* --- Tổng thể --- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6fa;
+}
+
+/* --- Thanh menu chính --- */
+.list {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  /* căn giữa 2 phần: menu và auth-links */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* --- Danh sách menu --- */
+.list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* --- Từng mục trong menu --- */
+.list ul li {
+  margin: 0 15px;
+}
+
+/* --- Liên kết trong menu --- */
+.list ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* --- Hiệu ứng hover + active --- */
+.list ul li a:hover,
+.list ul li a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* --- Liên kết đăng nhập / đăng ký --- */
+.auth-links a {
+  color: #222;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.auth-links a:hover {
+  color: #007bff;
+}
