@@ -3,58 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Đăng nhập</title>
-  <link rel="stylesheet" href="style.css"> <!-- Liên kết đến file CSS -->
+  <!-- Font Awesome để hiển thị icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- File CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Khung chứa toàn bộ nội dung đăng nhập -->
   <div class="login-container">
-
-    <!-- Tiêu đề chính -->
     <h2>Đăng nhập</h2>
 
     <!-- Các nút đăng nhập bằng mạng xã hội -->
     <div class="social-login">
       <button class="facebook">
-        <!-- Icon Facebook (có thể thêm font-awesome nếu cần) -->
+        <i class="fa-brands fa-facebook-f"></i>
         <span>Đăng nhập bằng Facebook</span>
       </button>
 
       <button class="twitter">
+        <i class="fa-brands fa-x-twitter"></i>
         <span>Đăng nhập bằng Twitter</span>
       </button>
 
       <button class="google">
+        <i class="fa-brands fa-google"></i>
         <span>Đăng nhập bằng Google</span>
       </button>
     </div>
 
-    <!-- Tiêu đề phụ -->
-    <h3>Đăng nhập bằng email</h3>
+    <h3><i class="fa-solid fa-envelope"></i> Đăng nhập bằng email</h3>
 
-    <!-- Form đăng nhập -->
     <form class="email-login" id="login-form">
-
-      <!-- Trường nhập email -->
-      <input type="email" id="email" name="email" placeholder="E-mail" required>
-
-      <!-- Trường nhập mật khẩu -->
-      <div class="password-wrapper">
-        <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
-        <span class="toggle-password">👁️</span> <!-- Biểu tượng ẩn/hiện mật khẩu -->
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
       </div>
 
-      <!-- Nút đăng nhập -->
-      <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+      <div class="input-group password-wrapper">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+        <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+      </div>
+
+      <button type="submit" class="login-btn">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i> ĐĂNG NHẬP
+      </button>
     </form>
 
-    <!-- Liên kết phụ: Quên mật khẩu / Đăng ký -->
     <p class="links">
-      <a href="#">Quên mật khẩu?</a> |
-      <a href="#">Đăng ký tài khoản</a>
+      <a href="#"><i class="fa-solid fa-key"></i> Quên mật khẩu?</a> |
+      <a href="#"><i class="fa-solid fa-user-plus"></i> Đăng ký tài khoản</a>
     </p>
-
-  </div> <!-- Kết thúc .login-container -->
-
+  </div>
+   <script src="javaScript.js"></script>
 </body>
 </html>

@@ -1,21 +1,36 @@
-// Ẩn / hiện mật khẩu khi nhấn biểu tượng 👁️
-function togglePassword() {
-  const passwordInput = document.getElementById('password');
+// --- Hiển thị / ẩn mật khẩu ---
+const togglePassword = document.querySelector('.toggle-password');
+const passwordInput = document.querySelector('#password');
+
+togglePassword.addEventListener('click', () => {
   const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
   passwordInput.setAttribute('type', type);
-}
 
-// Xử lý khi nhấn nút đăng nhập (demo)
-document.getElementById('login-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Ngăn trang reload
+  // Đổi icon mắt
+  togglePassword.innerHTML = type === 'password'
+    ? '<i class="fa-solid fa-eye"></i>'
+    : '<i class="fa-solid fa-eye-slash"></i>';
+});
 
-  const email = document.getElementById('email').value.trim();
-  const username = document.getElementById('username').value.trim();
-  const password = document.getElementById('password').value.trim();
+// --- Xử lý đăng nhập ---
+const loginForm = document.querySelector('#login-form');
 
-  if (!email || !username || !password) {
-    alert('Vui lòng điền đầy đủ thông tin.');
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault(); // Ngăn form reload trang
+
+  const email = document.querySelector('#email').value.trim();
+  const password = document.querySelector('#password').value.trim();
+
+  // Thông tin đăng nhập mẫu (bạn có thể thay bằng dữ liệu thật)
+  const correctEmail = "admin@gmail.com";
+  const correctPassword = "123456";
+
+  // Kiểm tra thông tin đăng nhập
+  if (email === correctEmail && password === correctPassword) {
+    alert("✅ Đăng nhập thành công!");
+    // Chuyển hướng đến trang chính sau khi đăng nhập
+    window.location.href = "home.html"; 
   } else {
-    alert(`Chào mừng ${username}!`);
+    alert("❌ Sai email hoặc mật khẩu! Vui lòng thử lại.");
   }
 });
