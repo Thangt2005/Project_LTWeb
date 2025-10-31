@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (nếu bạn dùng icon mắt thật) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Khung chứa toàn bộ nội dung đăng kí -->
+    <div class="register-container">
+        <h2>Đăng Kí</h2>
+
+        <!-- Các nút đăng kí tài khoản bằng mạng xã hội -->
+        <div class="social-login">
+            <button class="facebook">
+                <span>Đăng kí bằng Facebook</span>
+            </button>
+
+            <button class="twitter">
+                <span>Đăng kí bằng Twitter</span>
+            </button>
+
+            <button class="google">
+                <span>Đăng kí bằng Google</span>
+            </button>
+        </div>
+
+        <!-- Tiêu đề phụ -->
+        <h3>Tạo tài khoản tại đây</h3>
+
+        <!-- Form đăng kí -->
+        <form class="email-register" id="register-form">
+            <!-- Trường nhập email -->
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+            <!-- Trường nhập tên đăng nhập -->
+            <input type="text" id="username-register" name="username-register" placeholder="Username" required>
+
+            <!-- Trường nhập mật khẩu -->
+            <div class="password-wrapper">
+                <input type="password" id="password-register" name="password-register" placeholder="Password" required>
+                <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+            </div>
+
+            <!-- Trường nhập lại mật khẩu -->
+            <input type="password" id="password-register1" name="password-repeat" placeholder="Repeat Password" required>
+
+            <!-- Nút đăng kí -->
+            <button type="submit" class="register-btn">ĐĂNG KÍ</button>
+        </form>
+    </div>
+
+    <!-- File JS xử lý -->
+    <script src="register.js"></script>
+</body>
+</html>
