@@ -1,0 +1,265 @@
+/* ===============================
+   1️⃣ Reset & Cấu hình cơ bản
+=============================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===============================
+   2️⃣ Navbar (4 nút chính + Login/Register)
+=============================== */
+nav.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0078d7, #00a8e8);
+  padding: 12px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 4 nút chính */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Nút trong navbar */
+.nav-buttons button {
+  background-color: white;
+  color: #0078d7;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-buttons button:hover {
+  background-color: #ffda79;
+  color: #222;
+  transform: scale(1.05);
+}
+
+/* Login / Register góc phải */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.auth-links a:hover {
+  background-color: white;
+  color: #0078d7;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  nav.list {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-buttons button {
+    width: 45%;
+  }
+
+  .auth-links {
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   3️⃣ Login & Register
+=============================== */
+.login-container,
+.register-container {
+  width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 120px;
+}
+
+/* Tiêu đề */
+h2 {
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Ô nhập email, mật khẩu */
+.email-login input,
+.email-register input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Hiển thị / ẩn mật khẩu */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.toggle-password:hover {
+  color: #0078d7;
+  transform: scale(1.1);
+}
+
+/* Nút đăng nhập / đăng ký */
+.login-btn,
+.register-btn {
+  width: 80%;
+  padding: 12px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  background-color: #444;
+}
+
+/* Đăng ký */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nút đăng nhập qua MXH */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-login button {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-login .facebook { background-color: #3b5998; }
+.social-login .twitter { background-color: #1da1f2; }
+.social-login .google { background-color: #db4437; }
+
+/* ===============================
+   4️⃣ Home
+=============================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f8f8f8;
+}
+
+/* Header */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e6b800;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar select, .search-bar input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background: #ffd11a;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+  color: #444;
+}
+
