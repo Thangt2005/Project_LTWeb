@@ -7,82 +7,275 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<!-- HEADER -->
-  <header class="top-bar">
-    <div class="logo">
-      <i class="fas fa-store"></i> <span>SHOP ONLINE</span>
-    </div>
 
-    <div class="search-bar">
-      <select>
-        <option value="all">Tất cả</option>
-        <option value="bon-cau">Bồn cầu</option>
-        <option value="voi-sen">Vòi sen</option>
-      </select>
-      <input type="text" placeholder="Tìm kiếm sản phẩm...">
-      <button><i class="fas fa-search"></i></button>
-    </div>
-
-    <div class="contact-info">
-      <div><i class="fas fa-phone"></i> <span>0903 992 636</span></div>
-      <div><i class="fas fa-headset"></i> <span>0982 262 636</span></div>
-    </div>
+    <!-- ========== HEADER MÀU XANH ========== -->
+  <header>
+    <h1>Thiết Bị Vệ Sinh Cao Cấp</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Đăng nhập</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="dropdown">
-      <button class="dropdown-btn"><i class="fas fa-bars"></i> Danh mục sản phẩm</button>
-      <ul class="dropdown-content">
-        <li>Combo</li>
-        <li>Bồn cầu</li>
-        <li>Vòi sen tắm</li>
-        <li>Chậu rửa chén</li>
-        <li>Bồn tắm nằm</li>
-        <li>Phụ kiện</li>
-        <li>Két sắt</li>
+  <!-- ========== MENU DƯỚI HEADER ========== -->
+  <div class="menu-container">
+
+    <!-- Cột danh mục bên trái -->
+    <div class="sidebar">
+      <div class="menu-title"><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</div>
+      <div class="sidebar-menu" id="sidebar-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li><a href="#">Bồn cầu</a></li>
+        <li><a href="#">Lavabo</a></li>
+        <li><a href="#">Tủ Lavabo</a></li>
+        <li><a href="#">Vòi sen tắm</a></li>
+        <li><a href="#">Bồn tắm</a></li>
+        <li><a href="#">Vòi rửa</a></li>
+        <li><a href="#">Bồn tiểu nam</a></li>
+        <li><a href="#">Phụ kiện</a></li>
       </ul>
+      </div>
     </div>
 
-    <ul class="menu">
-      <li><a href="#">Trang chủ</a></li>
-      <li><a href="#">Giới thiệu</a></li>
-      <li><a href="#">Tin tức</a></li>
-      <li><a href="#">Sản phẩm</a></li>
-      <li><a href="#">Chính sách</a></li>
-      <li><a href="#">Liên hệ</a></li>
-    </ul>
-  </nav>
+    <!-- Thanh menu ngang -->
+    <div class="top-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li class="dropdown">
+          <a href="#">Bồn Cầu</a>
+          <div class="dropdown-content">
+            <div class="dropdown-title">Bồn Cầu</div>
+            <ul>
+              <li><a href="#">Bồn cầu 1 khối</a></li>
+              <li><a href="#">Bồn cầu 2 khối</a></li>
+              <li><a href="#">Bồn cầu trứng</a></li>
+              <li><a href="#">Bồn cầu treo tường</a></li>
+            </ul>
+          </div>
+        </li>
 
-  <!-- BANNER -->
-  <section class="banner">
-    <div class="banner-content">
-      <h2>Khuyến mãi chào mừng tháng mới</h2>
-      <p>Giảm giá lên đến <span>50%</span></p>
-      <button>Mua ngay</button>
-    </div>
-  </section>
+        <li><a href="#">Lavabo</a></li>
+        <li><a href="#">Tủ Lavabo</a></li>
+        <li><a href="#">Vòi Sen Tắm</a></li>
+        <li><a href="#">Chậu Rửa Chén</a></li>
+        <li><a href="#">Bồn Tắm</a></li>
+        <li><a href="#">Vòi Rửa</a></li>
+        <li><a href="#">Bồn Tiểu Nam</a></li>
+        <li><a href="#">Phụ Kiện</a></li>
+      </ul>
 
-  <!-- FEATURE SECTION -->
-  <section class="features">
-    <div class="feature-item">
-      <i class="fas fa-truck"></i>
-      <p>Giao hàng toàn quốc</p>
+      <div class="search-icon">
+        <i class="fa fa-search"></i>
+      </div>
     </div>
-    <div class="feature-item">
-      <i class="fas fa-wallet"></i>
-      <p>Thanh toán linh hoạt</p>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-certificate"></i>
-      <p>Cam kết chính hãng 100%</p>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-tags"></i>
-      <p>Giá tốt nhất thị trường</p>
-    </div>
-  </section>
 
+  </div>
+
+  <!-- Nội dung trang -->
+  <main class="main-content">
+    <h2>san phan noi bat</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb23.jpg" alt="Voi Lavabo LB23">
+        <h3>Voi Lavabo Inox 210 LB23</h3>
+        <p class="price">640,000đ <span class="discount">-6%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb21.jpg" alt="Voi sen tam LB21">
+        <h3>Voi sen tam nong lanh LB21</h3>
+        <p class="price">240,000đ <span class="discount">-13%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="sen-cay-nong-lanh.jpg" alt="sen cay nong lanh SC113">
+        <h3>Sen cay nong lanh SC113</h3>
+        <p class="price">820,000đ <span class="discount">-15%</span></p>
+      </div>
+... (67 lines left)
+Collapse
+home.html
+7 KB
+/* ===============================
+   1️⃣ Reset & Cấu hình cơ bản
+=============================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Arial", sans-serif;
+Expand
+style.css
+10 KB
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER MÀU XANH ========== -->
+  <header>
+    <h1>Thiết Bị Vệ Sinh Cao Cấp</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Đăng nhập</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MENU DƯỚI HEADER ========== -->
+  <div class="menu-container">
+
+    <!-- Cột danh mục bên trái -->
+    <div class="sidebar">
+      <div class="menu-title"><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</div>
+      <div class="sidebar-menu" id="sidebar-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li><a href="#">Bồn cầu</a></li>
+        <li><a href="#">Lavabo</a></li>
+        <li><a href="#">Tủ Lavabo</a></li>
+        <li><a href="#">Vòi sen tắm</a></li>
+        <li><a href="#">Bồn tắm</a></li>
+        <li><a href="#">Vòi rửa</a></li>
+        <li><a href="#">Bồn tiểu nam</a></li>
+        <li><a href="#">Phụ kiện</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <!-- Thanh menu ngang -->
+    <div class="top-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li class="dropdown">
+          <a href="#">Bồn Cầu</a>
+          <div class="dropdown-content">
+            <div class="dropdown-title">Bồn Cầu</div>
+            <ul>
+              <li><a href="#">Bồn cầu 1 khối</a></li>
+              <li><a href="#">Bồn cầu 2 khối</a></li>
+              <li><a href="#">Bồn cầu trứng</a></li>
+              <li><a href="#">Bồn cầu treo tường</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#">Lavabo</a></li>
+        <li><a href="#">Tủ Lavabo</a></li>
+        <li><a href="#">Vòi Sen Tắm</a></li>
+        <li><a href="#">Chậu Rửa Chén</a></li>
+        <li><a href="#">Bồn Tắm</a></li>
+        <li><a href="#">Vòi Rửa</a></li>
+        <li><a href="#">Bồn Tiểu Nam</a></li>
+        <li><a href="#">Phụ Kiện</a></li>
+      </ul>
+
+      <div class="search-icon">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Nội dung trang -->
+  <main class="main-content">
+    <h2>san phan noi bat</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb23.jpg" alt="Voi Lavabo LB23">
+        <h3>Voi Lavabo Inox 210 LB23</h3>
+        <p class="price">640,000đ <span class="discount">-6%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb21.jpg" alt="Voi sen tam LB21">
+        <h3>Voi sen tam nong lanh LB21</h3>
+        <p class="price">240,000đ <span class="discount">-13%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="sen-cay-nong-lanh.jpg" alt="sen cay nong lanh SC113">
+        <h3>Sen cay nong lanh SC113</h3>
+        <p class="price">820,000đ <span class="discount">-15%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="bon-cau-1-khoi-cao-cap-bc005.jpg" alt="bon cau bc005">
+        <h3>bon cau 1 khoi cao cap BC005</h3>
+        <p class="price">500,000đ <span class="discount">-29%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="chau-lavabo-tron-trang-b49.jpg" alt="chau Lavabo B49">
+        <h3>chau Lavabo tron Trang B49</h3>
+        <p class="price">1,140,000đ <span class="discount">-21%</span></p>
+      </div>
+
+    <!-- trang combo thiet vi sinh -->
+      <h2>Combo thiet bi ve sinh</h2>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+
+    <!-- trang sen cay -->
+    <h2>sen cay</h2>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+
+    <!-- trang voi sen -->
+     <h2>Voi Sen</h2>
+     <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+  </main>
 </body>
 </html>
