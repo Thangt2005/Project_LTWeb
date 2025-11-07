@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: "Segoe UI", "Arial", sans-serif;
@@ -21,6 +22,7 @@ nav.list {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 4 nút chính */
 .nav-buttons {
   display: flex;
   gap: 20px;
@@ -48,6 +50,7 @@ nav.list {
   transform: scale(1.05);
 }
 
+/* Login / Register góc phải */
 .auth-links {
   display: flex;
   align-items: center;
@@ -69,6 +72,7 @@ nav.list {
   color: #0078d7;
 }
 
+/* Responsive (mobile) */
 @media (max-width: 768px) {
   nav.list {
     flex-direction: column;
@@ -90,7 +94,6 @@ nav.list {
   }
 }
 
-/* Login & Register*/
 .login-container,
 .register-container {
   width: 400px;
@@ -198,8 +201,7 @@ h2 {
 .social-login .twitter { background-color: #1da1f2; }
 .social-login .google { background-color: #db4437; }
 
-/* Home */
-.home-content {
+
 body {
   padding-top: 120px; /* = chiều cao header */
 }
@@ -307,56 +309,16 @@ header nav ul li a {
 /* ================== THANH MENU NGANG (màu đen) ================== */
 .top-menu {
   flex: 1;
+  background: #222;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 60px 20px;
-  margin-top: 100px;
+  justify-content: space-between;
+  padding: 0 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  min-height: 52px;
 }
 
-.welcome-section {
-  text-align: center;
-  background-color: #fff;
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.welcome-section h1 {
-  font-size: 32px;
-  color: #0078d7;
-  margin-bottom: 20px;
-}
-
-.welcome-section p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.explore-btn {
-  background-color: #0078d7;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.explore-btn:hover {
-  background-color: #005ea6;
-  transform: scale(1.05);
 /* các mục menu ngang */
 .top-menu ul {
   display: flex;
@@ -500,9 +462,9 @@ header nav ul li a {
 }
 
 .button-group {
-  display: flex;            
-  justify-content: center;      
-  gap: 10px;               
+  display: flex;             
+  justify-content: center;    
+  gap: 10px;              
   margin-bottom: 15px;
 }
 
@@ -519,12 +481,10 @@ header nav ul li a {
 .add-to-cart:hover {
   background-color: #218838;
 }
-
-.add-to-cart i
- {
-  margin-right: 6px;
+.add-to-cart i{
+ margin-right: 6px; /* tạo khoảng cách giữa icon và chữ */
   font-size: 16px;
- }
+}
 
 .buy{
   background-color: #df0505;
@@ -538,7 +498,8 @@ header nav ul li a {
 .buy:hover{
   background-color: #df0505;
 }
+
 .buy i {
-  margin-right: 6px;
+  margin-right: 6px; /* tạo khoảng cách giữa icon và chữ */
   font-size: 16px;
 }
