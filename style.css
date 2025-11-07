@@ -1,6 +1,4 @@
-/* ===============================
-   1️⃣ Reset & Cấu hình cơ bản
-=============================== */
+
 body {
   margin: 0;
   font-family: "Segoe UI", "Arial", sans-serif;
@@ -10,10 +8,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-/* ===============================
-   2️⃣ Navbar (4 nút chính + Login/Register)
-=============================== */
 nav.list {
   display: flex;
   justify-content: space-between;
@@ -100,9 +94,6 @@ nav.list {
   }
 }
 
-/* ===============================
-   3️⃣ Login & Register
-=============================== */
 .login-container,
 .register-container {
   width: 400px;
@@ -210,15 +201,11 @@ h2 {
 .social-login .twitter { background-color: #1da1f2; }
 .social-login .google { background-color: #db4437; }
 
-/* ===============================
-   4️⃣ Home
-=============================== */
 
 body {
   padding-top: 120px; /* = chiều cao header */
 }
 
-/* ================== HEADER (màu xanh lớn) ================== */
 header {
   position: fixed;
   top: 0;
