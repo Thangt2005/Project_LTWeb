@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: "Segoe UI", "Arial", sans-serif;
@@ -7,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
 }
 nav.list {
   display: flex;
@@ -201,11 +201,6 @@ h2 {
 .social-login .twitter { background-color: #1da1f2; }
 .social-login .google { background-color: #db4437; }
 
-
-body {
-  padding-top: 120px; /* = chiều cao header */
-}
-
 header {
   position: fixed;
   top: 0;
@@ -363,109 +358,79 @@ header nav ul li a {
   cursor: pointer;
 }
 
-/* ================== DROPDOWN (menu con màu trắng) ================== */
-.dropdown {
-  position: relative;
-}
-.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 420px;            /* kích thước rộng giống ảnh */
-  background: #fff;
-  color: #222;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
-  padding: 22px 28px;
-  z-index: 900;
-}
-
-/* tiêu đề trong dropdown (vệt đỏ dưới) */
-.dropdown .dropdown-title {
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-align: center;
-}
-.dropdown .dropdown-title::after {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 3px;
-  background: #d30000;
-  margin-top: 8px;
-}
-
-/* danh sách con trong dropdown */
-.dropdown .dropdown-content ul {
-  list-style: none;
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-.dropdown .dropdown-content li a {
-  display: block;
-  padding: 8px 0;
-  color: #111;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* show dropdown khi hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /* san pham noi bat */
 .main-content {
-  text-align: center;
-  padding: 40px 20px;
+  margin-top: 200px; /* để tránh bị che bởi header + menu */
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh; /* đảm bảo nội dung có thể dài */
 }
-.main-content h2{
-   font-size: 24px;
-  margin-bottom: 30px;
-  color: #333;
+
+/* Tiêu đề "Sản phẩm nổi bật" */
+.main-content h2 {
+  font-size: 30px;               /* chữ to hơn một chút */
+  font-weight: 800;              /* đậm hơn */
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;            /* ✅ canh giữa */
+  margin: 20px 0 40px 0;         /* ✅ giảm khoảng cách phía trên */
 }
+
+
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 sản phẩm 1 hàng */
+  gap: 30px;                             /* khoảng cách giữa các thẻ */
+  justify-items: center;                 /* canh giữa từng card */
 }
+
+/* Thẻ sản phẩm */
 .product-card {
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 200px;
+  border-radius: 14px;
+  width: 260px;                          /* vừa khung, không quá to */
+  text-align: center;                    /* ✅ canh giữa chữ và hình */
   transition: transform 0.2s, box-shadow 0.2s;
+  padding: 15px;
 }
-.product-card:hover{
+
+.product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.product-card img{
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
+/* Hình ảnh sản phẩm */
+.product-card img {
+  height: 220px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px; /* canh giữa hình */
 }
-.product-card p {
-  font-size: 15px;
-  color: #333;
-  padding: 10px 0;
-  margin: 0;
+
+/* Tên sản phẩm */
+.product-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
 }
+
+/* Giá sản phẩm */
 .product-card .price {
   color: #e63946;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
+/* Nhóm nút */
 .button-group {
-  display: flex;             
-  justify-content: center;    
-  gap: 10px;              
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .add-to-cart {
@@ -477,16 +442,16 @@ header nav ul li a {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .add-to-cart:hover {
   background-color: #218838;
 }
+
 .add-to-cart i{
  margin-right: 6px; /* tạo khoảng cách giữa icon và chữ */
   font-size: 16px;
 }
 
-.buy{
+.buy {
   background-color: #df0505;
   color: white;
   border: none;
@@ -495,10 +460,9 @@ header nav ul li a {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.buy:hover{
-  background-color: #df0505;
+.buy:hover {
+  background-color: #b90404;
 }
-
 .buy i {
   margin-right: 6px; /* tạo khoảng cách giữa icon và chữ */
   font-size: 16px;
