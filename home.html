@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Trang chủ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER MÀU XANH ========== -->
+  <header>
+    <h1>Thiết Bị Vệ Sinh Cao Cấp</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Đăng nhập</a></li>
   <link rel="stylesheet" href="home_style.css">
 </head>
 <body>
@@ -21,6 +31,43 @@
 
   <!-- ========== MENU DƯỚI HEADER ========== -->
   <div class="menu-container">
+
+    <!-- Cột danh mục bên trái -->
+    <div class="sidebar">
+      <div class="menu-title"><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</div>
+      <div class="sidebar-menu" id="sidebar-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li><a href="#">Bồn cầu</a></li>
+        <li><a href="#">Lavabo</a></li>
+        <li><a href="#">Tủ Lavabo</a></li>
+        <li><a href="#">Vòi sen tắm</a></li>
+        <li><a href="#">Bồn tắm</a></li>
+        <li><a href="#">Vòi rửa</a></li>
+        <li><a href="#">Bồn tiểu nam</a></li>
+        <li><a href="#">Phụ kiện</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <!-- Thanh menu ngang -->
+    <div class="top-menu">
+      <ul>
+        <li><a href="#">Combo</a></li>
+        <li class="dropdown">
+          <a href="#">Bồn Cầu</a>
+          <div class="dropdown-content">
+            <div class="dropdown-title">Bồn Cầu</div>
+            <ul>
+              <li><a href="#">Bồn cầu 1 khối</a></li>
+              <li><a href="#">Bồn cầu 2 khối</a></li>
+              <li><a href="#">Bồn cầu trứng</a></li>
+              <li><a href="#">Bồn cầu treo tường</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#">Lavabo</a></li>
     <div class="sidebar">
       <div class="menu-title"><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</div>
     </div>
@@ -37,6 +84,16 @@
         <li><a href="#">Vòi Sen Tắm</a></li>
         <li><a href="#">Chậu Rửa Chén</a></li>
         <li><a href="#">Bồn Tắm</a></li>
+        <li><a href="#">Vòi Rửa</a></li>
+        <li><a href="#">Bồn Tiểu Nam</a></li>
+        <li><a href="#">Phụ Kiện</a></li>
+      </ul>
+
+      <div class="search-icon">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+
         <li><a href="#">Vòi Nước</a></li>
         <li><a href="#">Bồn Tiểu Nam</a></li>
         <li><a href="#">Phụ Kiện</a></li>
@@ -47,6 +104,91 @@
 
   <!-- Nội dung trang -->
   <main class="main-content">
+    <h2>san phan noi bat</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb23.jpg" alt="Voi Lavabo LB23">
+        <h3>Voi Lavabo Inox 210 LB23</h3>
+        <p class="price">640,000đ <span class="discount">-6%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb21.jpg" alt="Voi sen tam LB21">
+        <h3>Voi sen tam nong lanh LB21</h3>
+        <p class="price">240,000đ <span class="discount">-13%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="sen-cay-nong-lanh.jpg" alt="sen cay nong lanh SC113">
+        <h3>Sen cay nong lanh SC113</h3>
+        <p class="price">820,000đ <span class="discount">-15%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="bon-cau-1-khoi-cao-cap-bc005.jpg" alt="bon cau bc005">
+        <h3>bon cau 1 khoi cao cap BC005</h3>
+        <p class="price">500,000đ <span class="discount">-29%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="chau-lavabo-tron-trang-b49.jpg" alt="chau Lavabo B49">
+        <h3>chau Lavabo tron Trang B49</h3>
+        <p class="price">1,140,000đ <span class="discount">-21%</span></p>
+      </div>
+
+    <!-- trang combo thiet vi sinh -->
+      <h2>Combo thiet bi ve sinh</h2>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+      </div>
+      <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+
+    <!-- trang sen cay -->
+    <h2>sen cay</h2>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+
+    <!-- trang voi sen -->
+     <h2>Voi Sen</h2>
+     <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
+    </div>
+    <div class="product-card">
+        <img src="images/lb271.jpg" alt="Voi Lavabo LB271">
+        <h3>Voi Lavabo Inox 304 LB271</h3>
+        <p class="price">400,000đ <span class="discount">-10%</span></p>
     <h2>Sản phẩm nổi bật</h2>
     <div class="product-grid">
       <div class="product-card">
