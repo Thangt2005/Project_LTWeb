@@ -1,0 +1,125 @@
+body {
+  background-color: #e6e6e6;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/*login*/
+.login-container {
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+h2 {
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.google {
+  background-color: #db4437;
+}
+
+h3 {
+  color: #333;
+  margin: 25px 0 10px;
+}
+
+.email-login input {
+  width: 280px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 300px;
+  padding: 12px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #444;
+}
+/*register*/
+/* Khung chứa đăng kí */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc (nếu muốn) */
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  margin: auto; /* Giúp nó tự căn giữa màn hình */
+}
+
+/* Form đăng kí bằng email */
+.email-register input {
+  width: 75%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+/* Đảm bảo khối chứa các nút được căn giữa */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cập nhật lại nút đăng kí để đồng bộ chiều rộng */
+.social-login button {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
