@@ -308,18 +308,10 @@ button:hover {
     margin: 6px 0;
 }
 
-.footer-column ul li a:hover {
-    color: #ffcc00;
-}
-
 .social-icons a {
     color: white;
     font-size: 22px;
     margin-right: 12px;
-}
-
-.social-icons a:hover {
-    color: #ffcc00;
 }
 
 .footer-bottom {
@@ -329,3 +321,4 @@ button:hover {
     margin-top: 15px;
     font-size: 14px;
 }
+
