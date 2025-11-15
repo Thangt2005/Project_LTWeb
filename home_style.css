@@ -300,3 +300,60 @@ button {
 button:hover {
   opacity: 0.9;
 }
+
+/* ========== FOOTER ========== */
+.footer {
+    background: #222;
+    color: #fff;
+    margin-top: 40px;
+    padding-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.footer-column {
+    width: 23%;
+    min-width: 220px;
+    margin-bottom: 25px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #ffcc00;
+}
+
+.footer-column p,
+.footer-column ul li a {
+    color: #eee;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 6px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 12px;
+    background: #111;
+    margin-top: 15px;
+    font-size: 14px;
+}
