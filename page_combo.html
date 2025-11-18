@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Combo Sản phẩm</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="Combo_style.css" />
-  </head>
-  <body>
-    <!-- ========== HEADER MÀU XANH ========== -->
-    <header>
-      <h1>Thiết Bị Vệ Sinh & Phòng tắm</h1>
-      <nav>
+</head>
+<body>
+<!-- ========== HEADER MÀU XANH ========== -->
+<header>
+    <h1>Thiết Bị Vệ Sinh &amp; Phòng tắm</h1>
+    <nav>
         <ul>
-            <i class="fas fa-user"></i>
-            <li><a href="login_page.html">Thangt2005</a></li>
-          <li><a href="#">Giỏ hàng</a></li>
-            <form class="search-form" action="#" method="GET" style="margin: 0; display: flex; align-items: center;">
-                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm ..." class="search-input" />
-                <div class="search-icon"><i class="fa fa-search"></i></div>
-            </form>
+            <li class="user-item">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                <a href="login_page.html">Thangt2005</a>
+            </li>
+            <li><a href="#">Giỏ hàng</a></li>
+            <li class="search-li">
+                <form class="search-form" action="#" method="GET" style="margin: 0; display: flex; align-items: center;">
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm ..." class="search-input" />
+                    <button type="submit" class="search-icon" aria-label="Tìm kiếm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <!-- ========== MENU DƯỚI HEADER ========== -->
-    <div class="menu-container">
-      <!-- Cột danh mục bên trái -->
-      <div class="sidebar">
+<!-- ========== MENU DƯỚI HEADER ========== -->
+<div class="menu-container">
+    <!-- Cột danh mục bên trái -->
+    <div class="sidebar">
         <div class="menu-title">
-          <i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM
+            <i class="fa fa-bars" aria-hidden="true"></i> DANH MỤC SẢN PHẨM
         </div>
-      </div>
-
-      <!-- Thanh menu ngang -->
-      <div class="top-menu">
-        <ul>     <li><a href="home.html">Trang chủ</a></li>
-            <li><a href="page_combo.html">Combo</a></li>
-            <li><a href="toilet_page.html">Bồn Cầu</a></li>
-            <li><a href="lavabo-page.html">Lavabo</a></li>
-            <li><a href="page_Tulavabo.html">Tủ Lavabo</a></li>
-            <li><a href="page_VoiSenTam.html">Vòi Sen Tắm</a></li>
-            <li><a href="page_ChauRuaChen.html">Chậu Rửa Chén</a></li>
-            <li><a href="page_bonTam.html">Bồn Tắm</a></li>
-            <li><a href="page_voiRua.html">Vòi Rửa</a></li>
-            <li><a href="page_BonTieuNam.html">Bồn Tiểu Nam</a></li>
-            <li><a href="page_PhuKien.html">Phụ Kiện</a></li>
-            <
-        </ul>
-      </div>
     </div>
 
-    <!-- ========== PHẦN NỘI DUNG COMBO ========== -->
-    <main class="main-content">
-      <h2>Combo thiết bị vệ sinh & phòng tắm</h2>
+    <!-- Thanh menu ngang -->
+    <div class="top-menu">
+            <ul>
+                <li><a href="home.html">Trang chủ</a></li>
+                <li><a href="page_combo.html">Combo</a></li>
+                <li><a href="toilet_page.html">Bồn Cầu</a></li>
+                <li><a href="lavabo-page.html">Lavabo</a></li>
+                <li><a href="page_Tulavabo.html">Tủ Lavabo</a></li>
+                <li><a href="page_VoiSenTam.html">Vòi Sen Tắm</a></li>
+                <li><a href="page_ChauRuaChen.html">Chậu Rửa Chén</a></li>
+                <li><a href="page_bonTam.html">Bồn Tắm</a></li>
+                <li><a href="page_voiRua.html">Vòi Rửa</a></li>
+                <li><a href="page_BonTieuNam.html">Bồn Tiểu Nam</a></li>
+                <li><a href="page_PhuKien.html">Phụ Kiện</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-      <div class="combo-grid">
+<!-- ========== PHẦN NỘI DUNG COMBO ========== -->
+<main class="main-content">
+    <h2>Combo thiết bị vệ sinh &amp; phòng tắm</h2>
+
+    <div class="combo-grid">
         <div class="product-combo">
-          <h3>Combo sản phẩm 1</h3>
-          <img src="image_all/6.jpg" alt="Combo-luxury-1" />
-          <p class="combo">16,000,000đ <span class="dis">-30%</span></p>
+            <h3>Combo sản phẩm 1</h3>
+            <img src="image_all/6.jpg" alt="Combo-luxury-1" />
+            <p class="combo">16,000,000đ <span class="dis">-30%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
@@ -70,9 +74,9 @@
         </div>
 
         <div class="product-combo">
-          <h3>Combo sản phẩm 2</h3>
-          <img src="image_all/2.jpg" alt="Combo-luxury-2" />
-          <p class="combo">52,000,000đ <span class="dis">-22%</span></p>
+            <h3>Combo sản phẩm 2</h3>
+            <img src="image_all/2.jpg" alt="Combo-luxury-2" />
+            <p class="combo">52,000,000đ <span class="dis">-22%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
@@ -80,9 +84,9 @@
         </div>
 
         <div class="product-combo">
-          <h3>Combo sản phẩm 3</h3>
-          <img src="image_all/3.jpg" alt="Combo-luxury-3" />
-          <p class="combo">37,000,000đ <span class="dis">-28%</span></p>
+            <h3>Combo sản phẩm 3</h3>
+            <img src="image_all/3.jpg" alt="Combo-luxury-3" />
+            <p class="combo">37,000,000đ <span class="dis">-28%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
@@ -90,9 +94,9 @@
         </div>
 
         <div class="product-combo">
-          <h3>Combo sản phẩm 4</h3>
-          <img src="image_all/4.jpg" alt="Combo-popular" />
-          <p class="combo">87,000,000đ <span class="dis">-17%</span></p>
+            <h3>Combo sản phẩm 4</h3>
+            <img src="image_all/4.jpg" alt="Combo-popular" />
+            <p class="combo">87,000,000đ <span class="dis">-17%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
@@ -100,9 +104,9 @@
         </div>
 
         <div class="product-combo">
-          <h3>Combo sản phẩm 5</h3>
-          <img src="image_all/5.jpg" alt="Flash sale" />
-          <p class="combo">12,800,000đ <span class="dis">-60%</span></p>
+            <h3>Combo sản phẩm 5</h3>
+            <img src="image_all/5.jpg" alt="Flash sale" />
+            <p class="combo">12,800,000đ <span class="dis">-60%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
@@ -110,15 +114,22 @@
         </div>
 
         <div class="product-combo">
-          <h3>Combo sản phẩm 6</h3>
-          <img src="image_all/1.jpg" alt="Flash sale" />
-          <p class="combo">11,520,000đ <span class="dis">-55%</span></p>
+            <h3>Combo sản phẩm 6</h3>
+            <img src="image_all/1.jpg" alt="Flash sale" />
+            <p class="combo">11,520,000đ <span class="dis">-55%</span></p>
             <div class="button-group">
                 <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 <button class="buy"><i class="fa-solid fa-bag-shopping"></i> Đặt mua</button>
             </div>
         </div>
-      </div>
-    </main>
-  </body>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #f2f2f2; padding: 20px; text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 Thiết Bị Vệ Sinh &amp; Phòng Tắm. All rights reserved.</p>
+        <p>Địa chỉ: Đại học Nông Lâm TPHCM</p>
+        <p>Email: nonglam@hcmuaf.edu.vn | Hotline: 1900 123 456</p>
+    </footer>
+</main>
+</body>
 </html>

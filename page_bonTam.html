@@ -9,16 +9,22 @@
 <body>
 <!-- ========== HEADER MÀU XANH ========== -->
 <header>
-    <h1>Thiết Bị Vệ Sinh & Phòng tắm</h1>
+    <h1>Thiết Bị Vệ Sinh &amp; Phòng tắm</h1>
     <nav>
         <ul>
-            <i class="fas fa-user"></i>
-            <li><a href="login_page.html">Thangt2005</a></li>
+            <li class="user-item">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                <a href="login_page.html">Thangt2005</a>
+            </li>
             <li><a href="#">Giỏ hàng</a></li>
-            <form class="search-form" action="#" method="GET" style="margin: 0; display: flex; align-items: center;">
-                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm ..." class="search-input" />
-                <div class="search-icon"><i class="fa fa-search"></i></div>
-            </form>
+            <li class="search-li">
+                <form class="search-form" action="#" method="GET" style="margin: 0; display: flex; align-items: center;">
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm ..." class="search-input" />
+                    <button type="submit" class="search-icon" aria-label="Tìm kiếm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </li>
         </ul>
     </nav>
 </header>
@@ -34,6 +40,7 @@
 
     <!-- Thanh menu ngang -->
     <div class="top-menu">
+        <div class="menu-inner">
         <ul>      <li><a href="home.html">Trang chủ</a></li>
             <li><a href="page_combo.html">Combo</a></li>
             <li><a href="toilet_page.html">Bồn Cầu</a></li>
@@ -48,7 +55,7 @@
         </ul>
     </div>
 </div>
-
+</div>
 <!-- ========== PHẦN NỘI DUNG PAGE LAVABO ========== -->
 <main class="main-content">
     <h2>Một số mẫu Bồn Tắm bán chạy</h2>
@@ -120,6 +127,7 @@
             </div>
         </div>
     </div>
+
 </main>
 </body>
 </html>
