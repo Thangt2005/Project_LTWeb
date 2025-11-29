@@ -211,8 +211,7 @@ header nav a {
   background: #b22;
 }
 
-@media (max-width: 768px) {
-  header {
+ header {
     flex-direction: column;
     height: auto;
     padding: 15px;
@@ -240,3 +239,4 @@ header nav a {
     width: 100%;
   }
 }
+
